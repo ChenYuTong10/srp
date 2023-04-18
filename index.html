@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem ipsum</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            padding: 36px;
+            border: 1px solid #000;
+            border-radius: 2px;
+        }
+        form label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        #un-input, #pw-input {
+            width: 180px;
+            height: 36px;
+            margin-left: 12px;
+            padding: 6px 16px;
+            font-size: 14px;
+        }
+        .container .btn-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        #login-btn, #register-btn {
+            width: 100%;
+            height: 36px;
+        }
+        #login-btn {
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="un-input">
+                <p>Username:</p>
+                <input type="text" id="un-input" placeholder="type something..." value="zhangsan">
+            </label>
+            <label for="pw-input">
+                <p>Password:</p>
+                <input type="password" id="pw-input" placeholder="type something..." value="123456">
+            </label>
+            <div class="btn-group">
+                <button id="login-btn">Login</button>
+                <button id="register-btn">Register</button>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="client.js"></script>
+</body>
+</html>
